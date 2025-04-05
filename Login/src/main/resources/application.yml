@@ -3,12 +3,14 @@ spring:
     name: Login
 
   datasource:
-    url: jdbc:mysql://localhost:3306/loja-online
+    url: jdbc:mysql://localhost:3306/loja_online
     username: root
     password:
 
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update
 
 
 server:
