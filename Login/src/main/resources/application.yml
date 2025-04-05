@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: Login
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/loja-online
+    username: root
+    password:
+
+  jpa:
+    show-sql: true
+
+
+server:
+  port: 0
+
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://ms:123@localhost:8761/eureka
+  instance:
+    hostname: localhost
+    instance-id: Login:${spring.application.instance_id:${random.value}}
