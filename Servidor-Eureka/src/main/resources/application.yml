@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Servidor-Eureka
+  security:
+    user:
+      name: ms
+      password: 123
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
