@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ChaveAssinatura
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+ms:
+  login: ms
+  senha: 123
+
+mq:
+  queues:
+    getchave: get-chave
+    solicitachave: solicitacao-chave
