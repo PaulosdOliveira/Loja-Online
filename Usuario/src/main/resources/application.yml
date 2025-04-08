@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: usuario
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:mysql://localhost:3306/loja_online
+    username: root
+    password:
+
+  jpa:
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ms:123@localhost:8761/eureka
+  instance:
+    hostname: localhost
+    instance-id: usuario:${spring.application.instance_id:${random.value}}
+
+
+server:
+  port: 0
+
+
+mq:
+  queues:
+    getchave: get-chave
+    solicitachave: solicitacao-chave
+
+
+ms:
+  login: ms
+  senha: 123
+

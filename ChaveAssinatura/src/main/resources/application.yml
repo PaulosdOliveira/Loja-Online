@@ -8,6 +8,11 @@ spring:
     username: guest
     password: guest
 
+
+
+server:
+  port: 8085
+
 ms:
   login: ms
   senha: 123

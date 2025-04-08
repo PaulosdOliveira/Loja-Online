@@ -22,7 +22,10 @@ public class ChaveSecretaPublisher {
     private Queue queue;
 
     public void retornarChaveSecreta() throws JsonProcessingException {
+        System.out.println("Enviando chave secreta");
+
         try {
+            System.out.println(chaveSecreta.getSecretKey());
             String jsonChave = new ObjectMapper().writeValueAsString(chaveSecreta.getSecretKey());
             template.convertAndSend(queue.getName(), jsonChave);
         } catch (Exception e) {

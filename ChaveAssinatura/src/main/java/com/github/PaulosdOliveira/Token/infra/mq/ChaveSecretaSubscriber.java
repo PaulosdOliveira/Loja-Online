@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class ChaveSecretaSubscriber {
 
 
-    @Value("ms.login")
+    @Value("${ms.login}")
     private String login;
 
     @Value("${ms.senha}")
@@ -24,14 +24,16 @@ public class ChaveSecretaSubscriber {
 
 
     @RabbitListener(queues = "${mq.queues.solicitachave}")
-    public void receberSolicitaçãoChave(@Payload String payLoad){
-        try{
+    public void receberSolicitaçãoChave(@Payload String payLoad) {
+        System.out.println("Recebendo solicitaçã de envio de chave secreta");
+        try {
             MicroServico autenticacaoMS = new ObjectMapper().readValue(payLoad, MicroServico.class);
             String loginMs = autenticacaoMS.getLogin();
             String senhaMS = autenticacaoMS.getSenha();
-            if(loginMs.equals(login) && senhaMS.equals(senha)){
+            System.out.println(loginMs + "  /////////  " + senhaMS);
+            if (loginMs.equals(login) && senhaMS.equals(senha)) {
                 chaveSecretaPublisher.retornarChaveSecreta();
-            }else{
+            } else {
                 throw new ServidorNaoAutorizadoException();
             }
 

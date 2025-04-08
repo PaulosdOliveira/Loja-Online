@@ -20,6 +20,7 @@ public class GatewayApplication {
 	public RouteLocator routeLocator(RouteLocatorBuilder builder){
 
 		return builder.routes()
+				.route(r -> r.path("/private/**").uri("lb://ChaveAssinatura"))
 				.build();
 	}
 
