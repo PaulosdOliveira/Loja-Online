@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("produto")
 public class ProdutoController {
 
-
     private ProdutoService service;
 
     @PostMapping

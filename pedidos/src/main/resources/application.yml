@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: pedidos
+  datasource:
+    url: jdbc:mysql://localhost:3306/loja_online
+    username: root
+    password:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  jpa:
+    show-sql: true
+
+server:
+  port: 0
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://ms:123@localhost8761/eureka
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
