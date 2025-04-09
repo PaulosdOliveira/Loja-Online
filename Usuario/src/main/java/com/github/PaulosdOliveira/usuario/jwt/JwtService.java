@@ -38,4 +38,21 @@ public class JwtService {
         claims.put("perfil", usuario.getPerfil().toString());
         return claims;
     }
+
+    public String getEmailByToken(String token){
+
+      try{
+          return Jwts.parser()
+                  .verifyWith(chaveSecreta.getSecretKey())
+                  .build()
+                  .parseSignedClaims(token)
+                  .getPayload()
+                  .getSubject();
+      } catch (Exception e) {
+          System.out.println(e.getMessage());
+          return null;
+      }
+
+
+    }
 }

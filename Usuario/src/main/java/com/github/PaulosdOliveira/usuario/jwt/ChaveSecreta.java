@@ -22,11 +22,6 @@ public class ChaveSecreta {
     private String senha;
 
     public SecretKey getSecret() {
-        System.out.println("************************");
-        if (secretKey == null) {
-            System.out.println("Oiiiiiiiiii*********************");
-        }
-        System.out.println(this.secretKey);
         return this.secretKey;
     }
 

@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f6b4bad-d06f-4da8-8f40-ae9923adc1bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/LoginApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Usuario/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Usuario/src/test/java/com/github/PaulosdOliveira/usuario/LoginApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChaveAssinatura/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChaveAssinatura/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChaveAssinatura/src/main/java/com/github/PaulosdOliveira/Token/TokenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChaveAssinatura/src/main/java/com/github/PaulosdOliveira/Token/TokenApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChaveAssinatura/src/main/java/com/github/PaulosdOliveira/Token/infra/mq/ChaveSecretaPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChaveAssinatura/src/main/java/com/github/PaulosdOliveira/Token/infra/mq/ChaveSecretaPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChaveAssinatura/src/main/java/com/github/PaulosdOliveira/Token/infra/mq/ChaveSecretaSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChaveAssinatura/src/main/java/com/github/PaulosdOliveira/Token/infra/mq/ChaveSecretaSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChaveAssinatura/src/main/java/com/github/PaulosdOliveira/Token/model/MicroServico.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ChaveAssinatura/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChaveAssinatura/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/github/PaulosdOliveira/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/github/PaulosdOliveira/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Usuario/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Usuario/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/application/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/application/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/application/service/LoginMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/model/servico/LoginMS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/infra/repository/mq/PrivateKeyPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/infra/repository/mq/PrivateKeyPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/jwt/ChaveSecreta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/jwt/ChaveSecreta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/jwt/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Usuario/src/main/java/com/github/PaulosdOliveira/usuario/jwt/JwtService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,7 +1,7 @@
 package com.github.PaulosdOliveira.usuario.infra.repository.mq;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.PaulosdOliveira.usuario.application.service.LoginMS;
+import com.github.PaulosdOliveira.usuario.model.servico.LoginMS;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +25,6 @@ public class PrivateKeyPublisher {
 
 
     public void solicitarChaveSecreta(){
-        System.out.println("Solicitando chave secreta --------------");
-        System.out.println(login + "  /////////  " + senha);
         try{
             var loginMs = new LoginMS(login, senha);
             String json = new ObjectMapper().writeValueAsString( loginMs);
