@@ -30,6 +30,7 @@ public class Pedido {
     @Column(nullable = false)
     private LocalDate dataEntrega;
 
+    private String enderecoEntrega;
 
     public Pedido() {
     }

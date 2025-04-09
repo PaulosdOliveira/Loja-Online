@@ -13,7 +13,6 @@ public class PedidoService {
     private PedidoRepository repository;
 
     public void fazerPedido(PedidoDTO dto){
-
         repository.save(new Pedido());
     }
 }

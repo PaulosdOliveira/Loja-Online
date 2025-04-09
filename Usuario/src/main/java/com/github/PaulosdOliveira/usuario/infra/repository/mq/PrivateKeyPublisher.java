@@ -1,10 +1,11 @@
 package com.github.PaulosdOliveira.usuario.infra.repository.mq;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.PaulosdOliveira.usuario.model.servico.LoginMS;
+import com.github.PaulosdOliveira.usuario.servico.LoginMS;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Component;
 public class PrivateKeyPublisher {
 
     @Autowired
+    @Qualifier("queueChave")
     private Queue queue;
 
     @Autowired

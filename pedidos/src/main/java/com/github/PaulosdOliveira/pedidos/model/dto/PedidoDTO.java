@@ -5,6 +5,7 @@ public class PedidoDTO {
 
     private Long idUsuario;
     private Long idProduto;
+    private String enderecoEntrega;
 
     public PedidoDTO() {
 
@@ -29,5 +30,13 @@ public class PedidoDTO {
 
     public void setIdProduto(Long idProduto) {
         this.idProduto = idProduto;
+    }
+
+    public String getEnderecoEntrega() {
+        return enderecoEntrega;
+    }
+
+    public void setEnderecoEntrega(String enderecoEntrega) {
+        this.enderecoEntrega = enderecoEntrega;
     }
 }

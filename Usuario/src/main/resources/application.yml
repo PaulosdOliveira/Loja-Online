@@ -31,6 +31,7 @@ mq:
   queues:
     getchave: get-chave
     solicitachave: solicitacao-chave
+    pedido: pedido
 
 
 ms:

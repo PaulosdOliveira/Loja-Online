@@ -26,10 +26,19 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     private Perfil perfil;
 
+    @Column(nullable = false)
+    private String enderecoEntrega;
+
     public Usuario( String nome, String email, String senha) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
         this.perfil = Perfil.USUARIO;
+    }
+
+
+    @Override
+    public String toString(){
+        return this.id + "";
     }
 }

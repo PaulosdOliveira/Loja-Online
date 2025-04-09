@@ -18,8 +18,8 @@ public class ProdutoService {
         repository.save(new Produto(dto));
     }
 
-    public Produto findById(Long id){
-        return repository.findById(id)
-                .orElseThrow(ProdutoNaoEncontradoException::new);
+
+    public void existsById(Long id){
+        if(! repository.existsById(id)) throw new ProdutoNaoEncontradoException();
     }
 }

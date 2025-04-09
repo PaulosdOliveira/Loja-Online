@@ -9,6 +9,7 @@ import com.github.PaulosdOliveira.usuario.validation.UsuarioValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -46,7 +47,14 @@ public class UsuarioService {
 
     public Usuario findByEmail(String email) {
         Usuario usuario = repository.findByEmail(email);
-        if(usuario == null) new UsernameNotFoundException("Usuário não encontrado");
+        if (usuario == null) throw new UsernameNotFoundException("Usuário não encontrado");
         return usuario;
+    }
+
+
+    public String getEnderecoEntrega(Long id){
+        String endereco = repository.getEnderecoEntrega(id);
+        if(endereco != null) return endereco;
+        throw new UsernameNotFoundException("Usuário não encontrado");
     }
 }
