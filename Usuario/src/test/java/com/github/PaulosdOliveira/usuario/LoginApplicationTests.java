@@ -1,6 +1,7 @@
 package com.github.PaulosdOliveira.usuario;
 
 import com.github.PaulosdOliveira.usuario.jwt.ChaveSecreta;
+import com.github.PaulosdOliveira.usuario.model.enums.Perfil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,5 +21,6 @@ class LoginApplicationTests {
 	public void test(){
 		System.out.println(cave.getSecret());
 	}
+
 
 }

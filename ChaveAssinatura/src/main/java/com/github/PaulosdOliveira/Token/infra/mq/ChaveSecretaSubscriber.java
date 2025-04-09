@@ -30,7 +30,6 @@ public class ChaveSecretaSubscriber {
             MicroServico autenticacaoMS = new ObjectMapper().readValue(payLoad, MicroServico.class);
             String loginMs = autenticacaoMS.getLogin();
             String senhaMS = autenticacaoMS.getSenha();
-            System.out.println(loginMs + "  /////////  " + senhaMS);
             if (loginMs.equals(login) && senhaMS.equals(senha)) {
                 chaveSecretaPublisher.retornarChaveSecreta();
             } else {

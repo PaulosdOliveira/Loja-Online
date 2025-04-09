@@ -81,4 +81,12 @@ public class Pedido {
     public void setIdProduto(Long idProduto) {
         this.idProduto = idProduto;
     }
+
+    public String getEnderecoEntrega() {
+        return enderecoEntrega;
+    }
+
+    public void setEnderecoEntrega(String enderecoEntrega) {
+        this.enderecoEntrega = enderecoEntrega;
+    }
 }

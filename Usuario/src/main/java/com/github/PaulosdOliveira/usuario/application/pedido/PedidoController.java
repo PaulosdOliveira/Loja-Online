@@ -15,7 +15,7 @@ public class PedidoController {
     private PedidoService service;
 
 
-    @PostMapping
+    @PostMapping("/{idProduto}")
     public ResponseEntity<String> fazerPedido(@PathVariable Long idProduto){
         String resultado = service.fazerPedido(idProduto);
         return ResponseEntity.ok(resultado);

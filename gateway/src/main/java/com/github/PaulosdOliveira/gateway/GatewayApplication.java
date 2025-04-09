@@ -20,7 +20,9 @@ public class GatewayApplication {
 	public RouteLocator routeLocator(RouteLocatorBuilder builder){
 
 		return builder.routes()
-				.route(r -> r.path("/private/**").uri("lb://ChaveAssinatura"))
+				.route(r -> r.path("/usuario/**").uri("lb://usuario"))
+				.route(r -> r.path("/produto/**").uri("lb://usuario"))
+				.route(r -> r.path(("/pedido/**")).uri("lb://usuario"))
 				.build();
 	}
 

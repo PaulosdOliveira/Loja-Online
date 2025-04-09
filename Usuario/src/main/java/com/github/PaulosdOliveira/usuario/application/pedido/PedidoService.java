@@ -25,7 +25,8 @@ public class PedidoService {
     public String fazerPedido(Long idProduto) {
         try {
             produtoService.existsById(idProduto);
-            String idUsuarioSTR = SecurityContextHolder.getContext().getAuthentication().getPrincipal().toString();
+            String idUsuarioSTR = SecurityContextHolder.getContext().getAuthentication().getCredentials().toString();
+            System.out.println(idUsuarioSTR + "9999999999999999999999999");
             Long idUsuario = Long.parseLong(idUsuarioSTR);
             String enderecoEntrega = usuarioService.getEnderecoEntrega(idUsuario);
             PedidoDTO dto = new PedidoDTO(idUsuario, idProduto, enderecoEntrega);

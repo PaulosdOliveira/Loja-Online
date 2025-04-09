@@ -33,7 +33,7 @@ public class JwtFilter extends OncePerRequestFilter {
                     .password(usuario.getSenha())
                     .roles(usuario.getPerfil().toString())
                     .build();
-            UsernamePasswordAuthenticationToken useAuth = new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
+            UsernamePasswordAuthenticationToken useAuth = new UsernamePasswordAuthenticationToken(user, usuario.getId(), user.getAuthorities());
             SecurityContextHolder.getContext().setAuthentication(useAuth);
         }
         filterChain.doFilter(request, response);
@@ -53,7 +53,7 @@ public class JwtFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
         String uri = request.getRequestURI();
-        return uri.contains("/usuario");
+        return uri.contains("/usuario/**");
     }
 
 
