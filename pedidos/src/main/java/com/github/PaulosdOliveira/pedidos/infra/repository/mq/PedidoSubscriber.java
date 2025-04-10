@@ -16,6 +16,7 @@ public class PedidoSubscriber {
 
     @RabbitListener(queues = "${mq.queues.pedido}")
     private void receberSolicitacaoPedido(@Payload String payLoad) {
+        System.out.println("Recebendo solicitação aqui!!");
         try {
             PedidoDTO dto = new ObjectMapper().readValue(payLoad, PedidoDTO.class);
             pedidoService.fazerPedido(dto);

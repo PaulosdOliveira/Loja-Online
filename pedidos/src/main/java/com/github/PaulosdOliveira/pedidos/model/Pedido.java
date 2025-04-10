@@ -32,6 +32,9 @@ public class Pedido {
 
     private String enderecoEntrega;
 
+
+    private Boolean entregue;
+
     public Pedido() {
     }
 
@@ -88,5 +91,13 @@ public class Pedido {
 
     public void setEnderecoEntrega(String enderecoEntrega) {
         this.enderecoEntrega = enderecoEntrega;
+    }
+
+    public Boolean getEntregue() {
+        return entregue;
+    }
+
+    public void setEntregue(Boolean entregue) {
+        this.entregue = entregue;
     }
 }
