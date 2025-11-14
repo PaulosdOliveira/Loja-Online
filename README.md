@@ -7,36 +7,7 @@
 # Descrição
  Projeto de loja online Com arquitetura de micro serviços
 
- # Recursos utilizados
 
- <h3>Spring Starter</h3>
- <ul>
-  <li>web</li>
-  <li>web-flux</li>
-  <li>security</li>
-  <li>validation</li>
-  <li>amqp</li>
-  <li>jpa</li>
-  <li>eureka-client</li>
-  <li>eureka-server</li>
-  <li>gateway</li>
- </ul>
-
- <h3>BD</h3>
- <ul>
-  <li>Mysql-Driver</li>
- </ul>
-
- <h3>Messageria</h3>
- <ul>
-   <li>RabbitMQ</li> 
- </ul>
- 
-
- <h3>Extra</h3>
- <ul>
-  <li>lombok</li>
- </ul>
 
  
 
